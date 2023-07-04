@@ -1,0 +1,17 @@
+<ul>
+	<!-- Iterate over object_list -->
+	{% for object in object_list %}
+	<!-- Display Objects -->
+	<li>Course ID : {{ object.id }}</li>
+	<li>Course Name : {{ object.name }}</li>
+	<li>Price : {{ object.price }}</li>
+	<li>Start Date : {{ object.start_date }}</li>
+	<li>End Date : {{ object.end_date }}</li>
+
+
+	<hr/>
+	<!-- If object_list is empty -->
+	{% empty %}
+	<li>No objects yet.</li>
+	{% endfor %}
+</ul>
